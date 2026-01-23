@@ -6,9 +6,14 @@ import Title from './components/Title'
 
 function App() {
 
+  const titles = ["Kategori", "Om oss", "Produkter"]
+
   return (
     <main>
-        <Title/>
+
+      {titles.map((item)=> <Title title={item}/>)}
+        <Title title="Mitt første react prosjekt"/>
+        <Title title="Donald"/>
        <h2>Dette er kjempegøy</h2>
    </main>
   )
