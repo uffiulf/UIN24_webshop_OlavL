@@ -11,9 +11,8 @@ function App() {
   return (
     <main>
 
-      {titles.map((item)=> <Title title={item}/>)}
-        <Title title="Mitt første react prosjekt"/>
-        <Title title="Donald"/>
+      {titles.map((item, i)=> <Title key={i} title={item}/>)}
+   
        <h2>Dette er kjempegøy</h2>
    </main>
   )
